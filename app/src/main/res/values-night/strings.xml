@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">BorutoApp</string>
     <string name="logo_description">BorutoApp Logo</string>
+    <string name="home_title">Explore</string>
 </resources>

@@ -2,10 +2,10 @@ package ca.on.listech.borutoapp.domain.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import ca.on.listech.borutoapp.util.Constants.HERO_REMOTE_KEY_TABLE
+import ca.on.listech.borutoapp.util.Constants.HERO_REMOTE_KEYS_TABLE
 
-@Entity(tableName =  HERO_REMOTE_KEY_TABLE)
-data class HeroRemoteKey(
+@Entity(tableName =  HERO_REMOTE_KEYS_TABLE)
+data class HeroRemoteKeys(
     @PrimaryKey(autoGenerate = false)
     val id: Int,
     val prevPage: Int?,
