@@ -2,6 +2,7 @@ package ca.on.listech.borutoapp.di
 
 import android.content.Context
 import androidx.room.Room
+import androidx.room.RoomDatabase
 import ca.on.listech.borutoapp.data.local.BorutoDB
 import ca.on.listech.borutoapp.util.Constants.BORUTO_DATABASE
 import dagger.Module
@@ -17,10 +18,11 @@ object DatabaseModule {
 
     @Provides
     @Singleton
-    fun provideDB(@ApplicationContext context: Context) =
-        Room.databaseBuilder(
+    fun provideDB(@ApplicationContext context: Context): RoomDatabase {
+        return Room.databaseBuilder(
             context,
             BorutoDB::class.java,
             BORUTO_DATABASE
         ).build()
+    }
 }

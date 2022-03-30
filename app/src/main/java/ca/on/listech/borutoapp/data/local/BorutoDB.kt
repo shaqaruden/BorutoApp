@@ -12,5 +12,5 @@ import ca.on.listech.borutoapp.domain.model.HeroRemoteKeys
 @TypeConverters(DatabaseConverter::class)
 abstract class BorutoDB: RoomDatabase() {
     abstract fun heroDao(): HeroDao
-    abstract fun heroRemoteKeyDao(): HeroRemoteKeysDao
+    abstract fun heroRemoteKeysDao(): HeroRemoteKeysDao
 }
