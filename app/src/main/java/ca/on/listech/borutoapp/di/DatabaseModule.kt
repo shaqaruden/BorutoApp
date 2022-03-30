@@ -18,7 +18,7 @@ object DatabaseModule {
 
     @Provides
     @Singleton
-    fun provideDB(@ApplicationContext context: Context): RoomDatabase {
+    fun provideDB(@ApplicationContext context: Context): BorutoDB {
         return Room.databaseBuilder(
             context,
             BorutoDB::class.java,
